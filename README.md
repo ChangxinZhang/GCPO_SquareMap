@@ -65,6 +65,7 @@ The agent starts at a defined initial state $(1.5, 1,5, 0, 0)$ within the map.
 **Action Space:** The agent's actions are continuous and define the acceleration $a_t = (a^x_t, a^y_t)$ in the $x$ and $y$ directions. The agent can adjust its acceleration to control its movement.
 
 **State Transition:** The state transition for the agent can be described using the following equations:
+
 $$
 \begin{aligned}
 	x_{t+1} & = x_t + \dot{x}_t,  \\
@@ -73,6 +74,7 @@ $$
 	\dot{y}_{t+1} & = \dot{y}_t + a^y_t,
 \end{aligned}
 $$
+
 and the agent has a maximum speed $0 \leq v \leq 0.5$ and acceleration limit $0 \leq \text{acc} \leq 0.2$ that it must adhere to during movement, where $v =  \sqrt{ \dot{x}^2 +  \dot{y}^2 }$, and  $\text{acc}=  \sqrt{ a_x^2 +  a_y^2 }$.
 The agent's movement follows basic physics principles, where acceleration influences velocity and velocity influences position. The agent's speed is limited by its maximum allowed speed, and any acceleration beyond the maximum is scaled down.
 
