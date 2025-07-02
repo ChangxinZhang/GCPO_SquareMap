@@ -1,7 +1,7 @@
 ![Python 3.11](https://img.shields.io/badge/python-3.11+-blue)
 ![License: MIT](https://img.shields.io/badge/license-MIT-green)
 
-# Game-theoretic Constrained Policy Optimization (GCPO)
+# Game-theoretic Constrained Policy Optimization (GCPO) for Safe Reinforcement Learning
 GCPO (Game-theoretic Constrained Policy Optimization) is a constrained reinforcement learning method. GCPO formulates the  CRL  problem as a task-constraints Markov game (TCMG), in which a task player strives to maximize the cumulative task rewards, while constraint players focus on reducing the constraint costs until the constraints are satisfied.
 
 This repository is the implementation of GCDDPG (an off-policy version of GCPO) and typical safe reinforcement learning algorithms based on DDPG (deep deterministic policy gradient) in the SquareMapEnv.
